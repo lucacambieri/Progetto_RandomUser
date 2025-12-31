@@ -1,2 +1,8 @@
 # Progetto_RandomUser
-Progetto RandomUser
+Le funzionalità principali del mio progetto sono:
+ - Una navBar da cui selezionare la pagina in cui navigare e da cui si possono gestire le impostazioni per la chiamata API cliccando sulla rotella.
+ - Una schermata Home che presenta una tabella a sinistra dove sono mostrati tutti gli utenti ricevuti dalla chiamata. Inoltre, dalla tabella, si può selezionare un utente che verrà poi mostrato nel container a destra. In questo container saranno visualizzate 4 icone, le quali, se ci si passa sopra con il mouse, mostreranno dati diversi. Sono presenti inoltre dei pulsanti di navigazione per cambiare utente selezionato. In più, l'icona della stellina in alto a destra serve per mettere un utente nei preferiti, i quali verranno visualizzati in una pagina a parte.
+ - Una pagina dei preferiti, dove sono mostrati tutti gli utenti che sono stati contrassegnati come preferiti. Sulle card di ogni utente c'è un pulsante che serve a rimuovere un utente dai preferiti. Da notare che la lista di utenti preferiti è salvata nel LocalStorage, perciò, anche una volta ricaricata la pagina, i preferiti rimarranno.
+ - Una pagina "Foto Utenti" dove vengono mostrati tutti gli utenti che possono essere generati, suddivisi per maschi e femmine. Se si clicca sulla foto di un utente, si aprirà una card dove vengono mostrati nome e età della persona.
+ - In tutte le pagine è presente un footer contenente alcune delle mie informazioni. Inoltre, se si clicca sull'icona di instagram o github, si verrà reindirizzati sui miei appositi account.
+ - Infine ho cercati di gestire il sito in modo che fosse responsive utilizzando le classi di bootstrap.
