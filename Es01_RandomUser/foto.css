@@ -1,0 +1,41 @@
+/* Effetto vetrato per la modal in foto.html */
+
+.modal-content {
+	background: rgba(255, 255, 255, 0.1) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2) !important;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 12px;
+}
+
+.modal-header {
+	background-color: transparent !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.modal-body {
+	background-color: transparent !important;
+}
+
+.modal-footer {
+	background-color: transparent !important;
+	border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-close {
+	filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Testo bianco nella modal senza grassetto */
+.modal .modal-title,
+.modal .card-title {
+	color: #ffffff !important;
+	font-weight: normal !important;
+}
+
+.modal .text-muted,
+.modal .modal-body .text-muted {
+	color: #ffffff !important;
+}
+

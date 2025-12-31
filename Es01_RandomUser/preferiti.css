@@ -1,0 +1,61 @@
+/* Effetto vetrato per le card in preferiti.html */
+
+.card {
+	background: rgba(255, 255, 255, 0.1) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2) !important;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+	border-radius: 12px;
+}
+
+.card-body {
+	background-color: transparent !important;
+}
+
+.card-footer {
+	background: rgba(255, 255, 255, 0.05) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.card-img-top {
+	border-radius: 12px 12px 0 0;
+}
+
+/* Testo bianco nelle card senza grassetto */
+.card .card-text,
+.card .card-text.text-muted {
+	color: #ffffff !important;
+}
+
+.card .card-text strong {
+	color: #ffffff !important;
+	font-weight: normal !important;
+}
+
+/* Testo scuro per il div noPreferiti (ha sfondo chiaro) */
+#noPreferiti,
+#noPreferiti h4,
+#noPreferiti p,
+#noPreferiti a {
+	color: #212529 !important;
+}
+
+/* Card più piccole su mobile */
+@media (max-width: 767.98px) {
+	.card {
+		font-size: 0.9rem;
+	}
+	
+	.card-title {
+		font-size: 1.1rem;
+	}
+	
+	.card-img-top {
+		height: 200px;
+		object-fit: cover;
+	}
+}
+

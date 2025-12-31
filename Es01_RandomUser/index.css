@@ -1,0 +1,220 @@
+/* Sfondo gradiente per tutte le pagine */
+body {
+	background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+	min-height: 100vh;
+	background-attachment: fixed;
+	color: #e0e0e0;
+}
+
+/* Stili per il testo chiaro su tutte le pagine */
+h1, h2, h3, h4, h5, h6 {
+	color: #ffffff !important;
+}
+
+h1 {
+	margin: 20px;
+	padding: 10px;
+}
+
+p, span, label, div, li {
+	color: #e0e0e0;
+}
+
+/* Link */
+a {
+	color: #87ceeb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b0e0e6;
+}
+
+/* Link nella navbar già hanno colori Bootstrap, mantienili */
+.navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Classi Bootstrap per il testo */
+.text-muted {
+	color: #b0b0b0 !important;
+}
+
+.card-title, .card-text {
+	color: #e0e0e0;
+}
+
+/* Form labels e input */
+.form-check-label {
+	color: #e0e0e0 !important;
+}
+
+.form-label {
+	color: #e0e0e0;
+}
+
+/* Altri elementi comuni */
+b, strong {
+	color: #ffffff;
+}
+
+small {
+	color: #b0b0b0;
+}
+
+/* Elementi card Bootstrap */
+.card-body, .card-footer {
+	color: #e0e0e0;
+}
+
+/* Alert messages */
+.alert {
+	color: #e0e0e0;
+}
+
+.alert-info {
+	color: #e0e0e0;
+}
+
+/* Footer - mantieni text-white ma assicurati che funzioni */
+footer.text-white,
+footer.text-white h5,
+footer.text-white p,
+footer.text-white a {
+	color: #ffffff !important;
+}
+
+/* Link nel footer */
+footer a:hover {
+	color: #b0e0e6 !important;
+}
+
+
+table{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-radius:12px;
+	border-collapse:separate;
+	border-spacing: 0;
+	overflow-y: auto;
+	display: block;
+	max-height: 500px;
+	/* Effetto vetrato */
+	background: rgba(255, 255, 255, 0.1) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+table tr{
+	height: auto;
+}
+
+table th{
+	text-align:left;
+	width:30%;
+	background-color: rgba(153, 153, 153, 0.3) !important;
+	border: none;
+	padding: 12px 15px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+table th:last-of-type(){
+	width:10%;
+}
+
+table td{
+	border: none;
+	background-color: transparent !important;
+	padding: 12px 15px;
+	color: #e0e0e0;
+}
+
+/* Sovrascrivi le classi Bootstrap per renderle semi-trasparenti */
+table tr.bg-info-subtle {
+	background-color: rgba(13, 202, 240, 0.15) !important;
+}
+
+table tr.bg-primary-subtle {
+	background-color: rgba(13, 110, 253, 0.1) !important;
+}
+
+/* Rimuovi background opaco dalle classi bg-info nelle th */
+table th.bg-info {
+	background-color: rgba(13, 110, 253, 0.3) !important;
+}
+
+button{
+	width:340px;
+	margin: 20px;
+	margin-top:0;
+	padding: 10px;
+	background-color:#ffa;
+	border-radius:5px;
+	border:1px solid #777;
+	font-weight:bold;
+	font-size:12pt;
+	cursor:pointer;
+}
+
+.icona {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	min-height: 80px !important;
+	flex-direction: column !important;
+}
+
+.icona svg {
+	width: 50px !important;
+	height: 50px !important;
+}
+
+#impostazioni{
+	display: none;
+	/* Effetto vetrato */
+	background: rgba(255, 255, 255, 0.1) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2) !important;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Allinea i checkbox a sinistra in colonne centrate */
+#nazioni {
+	display: flex !important;
+	justify-content: center !important;
+	flex-wrap: wrap;
+}
+
+#nazioni .col-4 {
+	text-align: left;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#nazioni .mb-3 {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding-left: 15px;
+}
+
+/* Effetto vetrato per il div con informazioni della persona */
+.container-fluid.row .col-12.bg-primary,
+.container-fluid.row .col-md-9.bg-primary {
+	background: rgba(255, 255, 255, 0.1) !important;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 12px;
+}
